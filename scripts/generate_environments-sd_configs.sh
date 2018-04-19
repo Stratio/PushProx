@@ -36,6 +36,7 @@ fi
 
 declare -A tmpconfig
 while IFS=$' ' read proxy port labels config; do
+        labels=${labels//,/ }
         check_connectivity "$proxy" >/dev/null 2>&1 || { echo "$proxy unreachable!" ; continue; }
         if [[ ! ${tmpconfig[$config]} ]]; then
             tmpconfig["$config"]=$(mktemp -p /dev/shm gen_sd_configs.XXXX)
