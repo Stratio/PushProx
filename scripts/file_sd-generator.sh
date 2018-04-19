@@ -22,7 +22,7 @@ function check_connectivity(){
     local port=${1##*:}
     if ! timeout 2 bash -c "</dev/tcp/$host/$port"; then
         echo "Cannot establish connection to http://$host:$port"
-        exit 1
+        return 1
     fi
 }
 

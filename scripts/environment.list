@@ -1,0 +1,4 @@
+# PROXY              EXPORTER_PORT  LABELS                               FILE_NAME
+IP1:PORT1            EXPORTER_PORT1 env:label1,exporter:exporter1        env1.json
+IP2:PORT2            EXPORTER_PORT2 env:label1,exporter:exporter2        env1.json
+IP3:PORT3            EXPORTER_PORT3 env:label2,exporter:exporter3        env2.json
