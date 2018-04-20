@@ -1,4 +1,4 @@
-# PushProx [![CircleCI](https://circleci.com/gh/RobustPerception/PushProx.svg?style=shield)](https://circleci.com/gh/RobustPerception/PushProx)
+# PushProx
 
 PushProx is a client and proxy that allows transversing of NAT and other
 similar network topologies by Prometheus, while still following the pull model.
@@ -10,10 +10,10 @@ While this is reasonably robust in practice, this is a work in progress.
 First build the proxy and client:
 
 ```
-go get github.com/robustperception/pushprox/{client,proxy}
-cd ${GOPATH-$HOME/go}/src/github.com/robustperception/pushprox/client
+go get github.com/stratio/pushprox/{client,proxy}
+cd ${GOPATH-$HOME/go}/src/github.com/stratio/pushprox/client
 go build
-cd ${GOPATH-$HOME/go}/src/github.com/robustperception/pushprox/proxy
+cd ${GOPATH-$HOME/go}/src/github.com/stratio/pushprox/proxy
 go build
 ```
 
